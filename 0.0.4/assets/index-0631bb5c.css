@@ -557,6 +557,7 @@ span.coin-score {
   -o-transition: 0.3s all ease-in-out;
   transition: 0.3s all ease-in-out;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .tab-container label.tab-label+label.tab-label {
