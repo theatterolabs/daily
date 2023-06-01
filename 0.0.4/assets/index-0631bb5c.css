@@ -558,6 +558,7 @@ span.coin-score {
 
 .tab-container label.tab-label+label.tab-label {
   border-left: 1px solid var(--separator-color);
+  -webkit-tap-highlight-color: transparent;
 }
 
 .tab-container label.tab-label.active {
