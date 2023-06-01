@@ -787,7 +787,7 @@ ul.leaderboard-trail {
 ul.top-three,
 ul.leaderboard-trail {
   list-style-type: none;
-  padding: 10px 0px 0px 0px;
+  padding: 10px 0px 10px 0px;
   
 }
 
