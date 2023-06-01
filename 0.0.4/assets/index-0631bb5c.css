@@ -780,6 +780,7 @@ span.coin-score {
 
 ul {
   counter-reset: leader;
+  -webkit-overflow-scrolling: touch;
 }
 
 ul.leaderboard-trail {
@@ -800,10 +801,6 @@ ul.top-three li,
 ul.leaderboard-trail li {
   text-align: center;
   position: relative;
-}
-
-ul.leaderboard-trail li {
-  -webkit-overflow-scrolling: touch;
 }
 
 ul.top-three {
