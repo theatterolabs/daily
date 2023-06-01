@@ -5360,13 +5360,14 @@ const userStore = defineStore("user", {
       var mm = (date.getMonth() + 1).toString().padStart(2, "0");
       var dd = date.getDate().toString().padStart(2, "0");
       var formattedDate = yyyy + "-" + mm + "-" + dd;
+      var ios = localStorage.getItem("ios");
       try {
         var result = await fetchWrapper.post(
           `${baseUrl$1}/apis/mwAPI1/api/v1/dailyChallenge/dailyRewardsAPI/swq`,
           { userId: this.userId, rewardDate: formattedDate }
         );
         try {
-          if (this.isIOS === "0")
+          if (ios === "0")
             JSBridge.showMessageInNative("rewardCollected:true");
           else
             window.webkit.messageHandlers.dataHandler.postMessage("rewardCollected:true");
@@ -5387,13 +5388,14 @@ const userStore = defineStore("user", {
       var mm = (date.getMonth() + 1).toString().padStart(2, "0");
       var dd = date.getDate().toString().padStart(2, "0");
       var formattedDate = yyyy + "-" + mm + "-" + dd;
+      var ios = localStorage.getItem("ios");
       try {
         var result = await fetchWrapper.post(
           `${baseUrl$1}/apis/mwAPI1/api/v1/dailyChallenge/dailyStreakRewardAPI/swq`,
           { userId: this.userId, rewardDate: formattedDate, dailyStreakReward }
         );
         try {
-          if (this.isIOS === "0")
+          if (ios === "0")
             JSBridge.showMessageInNative("rewardCollected:true");
           else
             window.webkit.messageHandlers.dataHandler.postMessage("rewardCollected:true");
