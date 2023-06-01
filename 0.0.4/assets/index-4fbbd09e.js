@@ -5475,10 +5475,10 @@ const _sfc_main$5 = /* @__PURE__ */ defineComponent({
       )
     });
     function backButton() {
-      console.log("ios variable value-" + this.isIOS);
       console.log("ios localstorage value-" + localStorage.getItem("ios"));
+      var ios = localStorage.getItem("ios");
       try {
-        if (this.isIOS === "0") {
+        if (this.ios === "0") {
           JSBridge.showMessageInNative("exitPage:true");
         } else {
           window.webkit.messageHandlers.dataHandler.postMessage("exitPage:true");
