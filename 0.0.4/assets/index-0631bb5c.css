@@ -780,21 +780,18 @@ span.coin-score {
 
 ul {
   counter-reset: leader;
- 
 }
 
 ul.leaderboard-trail {
   height: 37vh;
+  overflow-y: auto;
   margin-top: 0;
-  -webkit-overflow-scrolling: touch;
-  
 }
 
 ul.top-three,
 ul.leaderboard-trail {
   list-style-type: none;
   padding: 10px 0px 10px 0px;
-  
   
 }
 
@@ -912,7 +909,6 @@ ul.top-three li:nth-child(2) {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   margin-bottom: 0.5rem;
-  
 }
 
 .runner-up-card:first-of-type::before {
