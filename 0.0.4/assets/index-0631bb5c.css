@@ -227,7 +227,7 @@ header.game nav .burger img {
 header.game .logo {
   -ms-flex-item-align: center;
   align-self: center;
-  left:3%;
+  
 }
 
 header.game .logo img {
