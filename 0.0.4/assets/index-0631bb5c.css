@@ -792,6 +792,7 @@ ul.top-three,
 ul.leaderboard-trail {
   list-style-type: none;
   padding: 10px 0px 10px 0px;
+  -webkit-overflow-scrolling: touch;
   
 }
 
